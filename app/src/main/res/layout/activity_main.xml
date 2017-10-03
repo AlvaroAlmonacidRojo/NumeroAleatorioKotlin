@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.azarquiel.numeroaleatoriokotlin.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvAcertado"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iVmenos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/flechamenos" />
+
+        <ImageView
+            android:id="@+id/iVmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/flechamas" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnmenos10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="-10"
+            app:srcCompat="@drawable/pi3" />
+
+        <ImageButton
+            android:id="@+id/btnmenos5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="-5"
+            app:srcCompat="@drawable/pi2" />
+
+        <ImageButton
+            android:id="@+id/btnmenos1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="-1"
+            app:srcCompat="@drawable/pi1" />
+
+        <ImageButton
+            android:id="@+id/btnmas1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="1"
+            app:srcCompat="@drawable/p1" />
+
+        <ImageButton
+            android:id="@+id/btnmas5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="5"
+            app:srcCompat="@drawable/p2" />
+
+        <ImageButton
+            android:id="@+id/btnmas10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:tag="10"
+            app:srcCompat="@drawable/p3" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvConta"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/contador"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

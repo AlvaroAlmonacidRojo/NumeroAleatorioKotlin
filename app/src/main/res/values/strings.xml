@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NumeroAleatorioKotlin</string>
+    <string name="numero">Numero</string>
+    <string name="contador">Contador:</string>
+</resources>
